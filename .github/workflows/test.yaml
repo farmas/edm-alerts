@@ -8,7 +8,7 @@ jobs:
     name: One with everything
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@1.0.8
       - name: Microsoft Teams Notification
         uses: skitionek/notify-microsoft-teams@master
         if: always()
