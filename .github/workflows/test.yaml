@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Microsoft Teams Notification
-        uses: farmas/notify-microsoft-teams@master
+        uses: farmas/notify-microsoft-teams@1.0.8
         if: always()
         with:
           webhook_url: ${{ secrets.MSTEAMS_WEBHOOK }}
