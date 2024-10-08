@@ -19,6 +19,7 @@ jobs:
           steps: ${{ toJson(steps) }}
       - name: Notify dedicated teams channel
         uses: jdcargile/ms-teams-notification@v1.4
+        if: always()
         with:
           github-token: ${{ github.token }} # this will use the runner's token.
           ms-teams-webhook-uri: ${{ secrets.MSTEAMS_WEBHOOK }}
