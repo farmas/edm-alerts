@@ -8,9 +8,9 @@ jobs:
     name: One with everything
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1.0.8
+      - uses: actions/checkout@master
       - name: Microsoft Teams Notification
-        uses: skitionek/notify-microsoft-teams@master
+        uses: skitionek/notify-microsoft-teams@1.0.8
         if: always()
         with:
           webhook_url: ${{ secrets.MSTEAMS_WEBHOOK }}
