@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  success:
+  test-alert:
     name: One with everything
     runs-on: ubuntu-latest
     steps:
